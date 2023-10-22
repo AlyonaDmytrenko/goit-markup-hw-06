@@ -373,8 +373,6 @@ img {
   margin-bottom: 48px;
 }
 
-/* max-width для моб версси тайтл посмотреть */
-
 .hero-button {
   color: #fff;
   font-size: 16px;
@@ -1057,7 +1055,9 @@ img {
   .header-list {
     display: flex;
   }
-
+  .header-navigation {
+    padding-right: 121px;
+  }
   .header-address {
     display: block;
     flex-direction: column;
