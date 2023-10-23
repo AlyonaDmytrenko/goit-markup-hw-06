@@ -89,6 +89,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header-logo-word {
@@ -179,7 +181,8 @@ img {
   display: flex;
   position: fixed;
   z-index: 1;
-  padding: 24px;
+  padding-top: 72px;
+  padding-left: 16px;
   top: 0;
   left: 0;
   width: 100vw;
@@ -191,8 +194,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: auto;
-  width: 320px;
-  height: 640px;
+  width: 100%;
 }
 .menu-open-button {
   display: flex;
@@ -242,7 +244,6 @@ img {
   color: #404bbf;
   display: block;
   align-items: center;
-  padding-bottom: 168px;
 }
 
 .menu-list-item {
@@ -255,7 +256,7 @@ img {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.2; /* 111.111% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
@@ -277,12 +278,14 @@ img {
   align-items: flex-start;
   gap: 24px;
   flex-direction: column-reverse;
+  margin-bottom: 48px;
 }
 
 .menu-address-link {
   color: #434455;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -368,9 +371,9 @@ img {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 217px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -415,7 +418,7 @@ img {
 .advantages-title {
   color: #2e2f42;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -1049,32 +1052,58 @@ img {
     max-width: 584px;
   }
 
+  .menu-open-button {
+    display: none;
+  }
   .menu-open-icon {
     display: none;
   }
   .header-list {
     display: flex;
+    align-items: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .header-navigation {
-    padding-right: 121px;
+  }
+
+  .header-logo {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .header-address {
-    display: block;
+    display: flex;
     flex-direction: column;
-    gap: 12px;
+  }
+  .header-address-list {
+  }
+  .header-address-item:not(:last-child) {
+    margin-bottom: 12px;
   }
   .header-address-link {
     font-size: 12px;
+    gap: 12px;
   }
   .header-logo {
     margin-right: 120px;
   }
   .hero-title {
     width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    max-width: 496px;
   }
 
   .menu-mob {
     display: none;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .team-list {
     justify-content: center;
@@ -1107,9 +1136,6 @@ img {
         ),
         url(../images/hero-bg/hero-bg-tab-2x.jpg);
     }
-  }
-  .hero-title {
-    font-size: 56px;
   }
 
   .advantages-list {
@@ -1202,6 +1228,12 @@ img {
     font-size: 16px;
   }
 
+  .header-logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 76px;
+  }
+
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1227,6 +1259,7 @@ img {
   .hero-title {
     font-size: 56px;
     max-width: 496px;
+    margin-bottom: 48px;
   }
   .menu-mob {
     display: none;
@@ -1277,5 +1310,8 @@ img {
   .hero-modal {
     width: 408px;
     height: 584px;
+  }
+  .footer-logo-box {
+    gap: 0;
   }
 }
